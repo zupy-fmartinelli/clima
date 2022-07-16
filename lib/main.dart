@@ -62,9 +62,8 @@ Future<void> main({
 class _App extends HookConsumerWidget {
   const _App({this.builder, this.getLocale});
 
-  final TransitionBuilder? builder;
-
   final Locale? Function(BuildContext)? getLocale;
+  final TransitionBuilder? builder;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
